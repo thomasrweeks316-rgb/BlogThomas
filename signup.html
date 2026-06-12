@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Star Wars Ramblings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Star Wars <span>Ramblings</span></h1>
+      <nav class="auth-nav" data-auth-nav="." aria-label="Account"></nav>
+    </header>
+
+    <a class="back-link" href="index.html">&larr; Back to home</a>
+
+    <section class="auth-card">
+      <h1>Create a Free Account</h1>
+      <p class="auth-lead">Pick a username and password to join the ramblings.</p>
+
+      <form id="signup-form" class="auth-form" data-home="index.html">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" required maxlength="30" pattern="[A-Za-z0-9_]+">
+          <p class="form-hint">3–30 characters. Letters, numbers, and underscores only. Profanity is not allowed.</p>
+          <p id="username-feedback" class="form-hint"></p>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" required minlength="8">
+          <p class="form-hint">At least 8 characters.</p>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required minlength="8">
+        </div>
+        <p id="form-message" class="form-message" hidden></p>
+        <button type="submit" class="btn btn-primary">Create account</button>
+      </form>
+
+      <p class="auth-switch">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>Star Wars Ramblings &middot; Built with Cursor AI</p>
+    </footer>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In — Star Wars Ramblings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Star Wars <span>Ramblings</span></h1>
+      <nav class="auth-nav" data-auth-nav="." aria-label="Account"></nav>
+    </header>
+
+    <a class="back-link" href="index.html">&larr; Back to home</a>
+
+    <section class="auth-card">
+      <h1>Log In</h1>
+      <p class="auth-lead">Welcome back to the galaxy's best conspiracy corner.</p>
+
+      <form id="login-form" class="auth-form" data-home="index.html">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" required maxlength="30">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required minlength="8">
+        </div>
+        <p id="form-message" class="form-message" hidden></p>
+        <button type="submit" class="btn btn-primary">Log in</button>
+      </form>
+
+      <p class="auth-switch">
+        No account yet? <a href="signup.html">Create a free account</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>Star Wars Ramblings &middot; Built with Cursor AI</p>
+    </footer>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>
